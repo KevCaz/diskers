@@ -21,7 +21,7 @@ package.
 Seeds dispersal kernels
 =======================
 
-I picked up 5 common seeds dispersal kernel in:
+I picked up 5 common seeds dispersal kernels in:
 
 1.  Nathan, R., Klein, E., Robledo-Arnuncio, J. J. & Revilla, E. in
     Dispersal Ecology and Evolution 186–210 (Oxford University

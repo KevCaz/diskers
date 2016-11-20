@@ -1,9 +1,13 @@
 ---
-title: "'recruitR': A R package including useful function for plant
-recruitment analyses."
 output:
     md_document
 ---
+
+
+# Packages description
+
+**'recruitR'**: A R package including useful functions for seedlings
+recruitment analyses.
 
 
 ```{r echo=FALSE}
@@ -21,9 +25,9 @@ devtools::load_all(".")
 
 Last 'README' update: `r format(Sys.time(), '%Y-%m-%d')`
 
-![Travis](https://travis-ci.org/KevCaz/recruitR.svg?branch=master)
-![Build status](https://ci.appveyor.com/api/projects/status/sk3sbvusvcyy0at0?svg=true)
-![codecov](https://codecov.io/gh/KevCaz/graphicsutils/branch/master/graph/badge.svg)
+[![Travis](https://travis-ci.org/KevCaz/recruitR.svg?branch=master)](https://travis-ci.org/KevCaz/recruitR)
+[![Build status](https://ci.appveyor.com/api/projects/status/sk3sbvusvcyy0at0?svg=true)](https://ci.appveyor.com/project/KevCaz/recruitr)
+[![codecov](https://codecov.io/gh/KevCaz/recruitR/branch/master/graphs/badge.svg)](https://codecov.io/gh/KevCaz/recruitR)
 
 
 

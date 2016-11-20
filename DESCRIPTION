@@ -1,0 +1,21 @@
+Package: recruitR
+Title: R package to assess seeds recruitment
+Version: 0.1.1
+Authors@R: c(
+  person("Kevin", "Cazelles", email = "kevin.cazelles@um2.fr", role = c("aut", "cre")),
+  person("Kevin", "Solarik", role = c("aut"))
+  )
+Description: set of R function to perform seeds recruitment analyses.
+Depends:
+    R (>= 3.2.3)
+License: GPL-3
+LazyData: true
+Imports:
+    magrittr,
+    GenSA
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1

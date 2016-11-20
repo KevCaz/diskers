@@ -20,7 +20,7 @@
 
 #' @describeIn kernels Gaussian kernel.
 #' \deqn{k(dist, scal) = \frac{1}{pi*scal^2}
-#' exp\left(-\right(\frac{dist}{scal}\right)^2\right)}
+#' exp\left(-\left(\frac{dist}{scal}\right)^2\right)}
 #' @export
 kern_gaussian <- function(dist, scal) {
     stopifnot(dist >= 0 & scal > 0)

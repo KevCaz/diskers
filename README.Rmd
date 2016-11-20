@@ -8,7 +8,7 @@ output:
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(
-  fig.path = "inst/assets/img/",
+  fig.path = "inst/img",
   comment = "#>",
   collapse = TRUE,
   warning = FALSE,

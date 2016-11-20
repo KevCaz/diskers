@@ -38,7 +38,7 @@ This is a set of five disersal kernel commonly used to model seeds dispersal.
 \itemize{
 \item \code{kern_gaussian}: Gaussian kernel.
 \deqn{k(dist, scal) = \frac{1}{pi*scal^2}
-exp\left(-\right(\frac{dist}{scal}\right)^2\right)}
+exp\left(-\left(\frac{dist}{scal}\right)^2\right)}
 
 \item \code{kern_exponential}: Exponential kernel.
 

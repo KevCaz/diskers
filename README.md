@@ -1,11 +1,11 @@
     ## Loading recruitR
 
-Last 'README' update: 2016-11-19
+Last 'README' update: 2016-11-20
 
-[![Travis](https://travis-ci.org/KevCaz/graphicsutils.svg?branch=master)](https://travis-ci.org/KevCaz/recruitr)
-[![Build
-status](https://ci.appveyor.com/api/projects/status/sk3sbvusvcyy0at0?svg=true)](https://ci.appveyor.com/project/KevCaz/recruitr)
-[![codecov](https://codecov.io/gh/KevCaz/graphicsutils/branch/master/graph/badge.svg)](https://codecov.io/gh/KevCaz/graphicsutils)
+![Travis](https://travis-ci.org/KevCaz/recruitR.svg?branch=master)
+![Build
+status](https://ci.appveyor.com/api/projects/status/sk3sbvusvcyy0at0?svg=true)
+![codecov](https://codecov.io/gh/KevCaz/graphicsutils/branch/master/graph/badge.svg)
 
 Installation
 ============
@@ -14,8 +14,8 @@ To get the current development version from Github, use the
 [*devtools*](http://cran.r-project.org/web/packages/devtools/index.html)
 package.
 
-    if (!require("recruitR'")) install.packages("recruitR'")
-    devtools::install_github("KevCaz/recruitR'")
+    if (!require("devtools'")) install.packages("devtools")
+    devtools::install_github("KevCaz/recruitR")
     library(recruitR)
 
 Seeds dispersal kernels

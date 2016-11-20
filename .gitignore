@@ -34,3 +34,4 @@ vignettes/*.pdf
 
 # MacOs files
 .DS_Store
+record_updates.txt

@@ -1,9 +1,11 @@
-Last 'README' update: 19 novembre 2016
+    ## Loading recruitR
 
- [![Travis](https://travis-ci.org/KevCaz/graphicsutils.svg?branch=master)](https://travis-ci.org/KevCaz/graphicsutils)
-|
+Last 'README' update: 2016-11-19
+
+[![Travis](https://travis-ci.org/KevCaz/graphicsutils.svg?branch=master)](https://travis-ci.org/KevCaz/recruitr)
+[![Build
+status](https://ci.appveyor.com/api/projects/status/sk3sbvusvcyy0at0?svg=true)](https://ci.appveyor.com/project/KevCaz/recruitr)
 [![codecov](https://codecov.io/gh/KevCaz/graphicsutils/branch/master/graph/badge.svg)](https://codecov.io/gh/KevCaz/graphicsutils)
-|
 
 Installation
 ============
@@ -14,6 +16,7 @@ package.
 
     if (!require("recruitR'")) install.packages("recruitR'")
     devtools::install_github("KevCaz/recruitR'")
+    library(recruitR)
 
 Seeds dispersal kernels
 =======================
@@ -28,6 +31,7 @@ I picked up 5 common seeds dispersal kernel in:
 <!-- -->
 
     seqx <- seq(0,10,0.001)
+    kern_gaussian(seqx, .5)
     plot(seqx, kern_gaussian(seqx, .5), type='l')
     plot(seqx, kern_lognormal(seqx, 3, .2), type='l')
     plot(seqx, kern_exponentiel_power(seqx,2,3), type='l')

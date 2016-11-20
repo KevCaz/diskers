@@ -19,20 +19,26 @@ kern_2Dt(dist, scal, shap)
 kern_lognormal(dist, scal, shap)
 }
 \arguments{
-\item{distance:}{a real positive number giving the dispersal distance.}
+\item{dist}{a real positive number giving the dispersal distance.}
 
-\item{scal:}{scale parameter a real positive number giving the shape parameter of the Kernel.}
+\item{scal}{a real positive number giving the scale parameter of the kernel.}
 
-\item{shap:}{shape parameter a real positve number used as the power of the kernel.}
-
-\item{opt:}{a real positive number related with the optimal sistance for dispersion.}
+\item{shap}{a real positive number giving the shape parameter of the kernel.}
+}
+\value{
+The pdf values at distance \code{dist}.
 }
 \description{
-Common seeds isotropic dispersal kernels.
+Common seed isotropic dispersal kernels.
+}
+\details{
+This is a set of five disersal kernel commonly used to model seeds dispersal.
 }
 \section{Functions}{
 \itemize{
 \item \code{kern_gaussian}: Gaussian kernel.
+\deqn{k(dist, scal) = \frac{1}{pi*scal^2}
+exp\left(-\right(\frac{dist}{scal}\right)^2\right)}
 
 \item \code{kern_exponential}: Exponential kernel.
 

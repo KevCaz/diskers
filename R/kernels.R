@@ -1,14 +1,17 @@
 #' Kernels functions
 #'
-#' Common seeds isotropic dispersal kernels.
+#' Common seed isotropic dispersal kernels.
+#'
+#' This is a set of five disersal kernel commonly used to model seeds dispersal.
 #'
 #' @author
 #' Kevin Cazelles
 #'
-#' @param distance: a real positive number giving the dispersal distance.
-#' @param scal: scale parameter a real positive number giving the shape parameter of the Kernel.
-#' @param shap: shape parameter a real positve number used as the power of the kernel.
-#' @param opt: a real positive number related with the optimal sistance for dispersion.
+#' @param dist a real positive number giving the dispersal distance.
+#' @param scal a real positive number giving the scale parameter of the kernel.
+#' @param shap a real positive number giving the shape parameter of the kernel.
+#'
+#' @return The pdf values at distance \code{dist}.
 #'
 #' @examples
 #' seqx <- seq(0,10,0.001)
@@ -16,6 +19,8 @@
 
 
 #' @describeIn kernels Gaussian kernel.
+#' \deqn{k(dist, scal) = \frac{1}{pi*scal^2}
+#' exp\left(-\right(\frac{dist}{scal}\right)^2\right)}
 #' @export
 kern_gaussian <- function(dist, scal) {
     stopifnot(dist >= 0 & scal > 0)

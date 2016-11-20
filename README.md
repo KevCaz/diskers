@@ -1,11 +1,17 @@
+Packages description
+====================
+
+**'recruitR'**: A R package including useful functions for seedlings
+recruitment analyses.
+
     ## Loading recruitR
 
 Last 'README' update: 2016-11-20
 
-![Travis](https://travis-ci.org/KevCaz/recruitR.svg?branch=master)
-![Build
-status](https://ci.appveyor.com/api/projects/status/sk3sbvusvcyy0at0?svg=true)
-![codecov](https://codecov.io/gh/KevCaz/graphicsutils/branch/master/graph/badge.svg)
+[![Travis](https://travis-ci.org/KevCaz/recruitR.svg?branch=master)](https://travis-ci.org/KevCaz/recruitR)
+[![Build
+status](https://ci.appveyor.com/api/projects/status/sk3sbvusvcyy0at0?svg=true)](https://ci.appveyor.com/project/KevCaz/recruitr)
+[![codecov](https://codecov.io/gh/KevCaz/recruitR/branch/master/graphs/badge.svg)](https://codecov.io/gh/KevCaz/recruitR)
 
 Installation
 ============
@@ -21,7 +27,7 @@ package.
 Seeds dispersal kernels
 =======================
 
-I picked up 5 common seeds dispersal kernels in:
+I picked up 5 common seeds dispersal kernel in:
 
 1.  Nathan, R., Klein, E., Robledo-Arnuncio, J. J. & Revilla, E. in
     Dispersal Ecology and Evolution 186–210 (Oxford University

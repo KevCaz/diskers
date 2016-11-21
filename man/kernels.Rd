@@ -3,7 +3,7 @@
 \name{kern_gaussian}
 \alias{kern_2Dt}
 \alias{kern_exponential}
-\alias{kern_exponentiel_power}
+\alias{kern_exponential_power}
 \alias{kern_gaussian}
 \alias{kern_lognormal}
 \title{Kernels functions}
@@ -12,7 +12,7 @@ kern_gaussian(dist, scal)
 
 kern_exponential(dist, scal)
 
-kern_exponentiel_power(dist, scal, shap)
+kern_exponential_power(dist, scal, shap)
 
 kern_2Dt(dist, scal, shap)
 
@@ -42,7 +42,7 @@ exp\left(-\left(\frac{dist}{scal}\right)^2\right)}
 
 \item \code{kern_exponential}: Exponential kernel.
 
-\item \code{kern_exponentiel_power}: Dispersal kernels from the exponential-power family.
+\item \code{kern_exponential_power}: Dispersal kernels from the exponential-power family.
 
 \item \code{kern_2Dt}: 2Dt kernel.
 

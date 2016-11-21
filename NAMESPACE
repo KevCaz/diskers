@@ -2,6 +2,6 @@
 
 export(kern_2Dt)
 export(kern_exponential)
-export(kern_exponentiel_power)
+export(kern_exponential_power)
 export(kern_gaussian)
 export(kern_lognormal)

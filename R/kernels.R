@@ -39,7 +39,7 @@ kern_exponential <- function(dist, scal) {
 
 #' @describeIn kernels Dispersal kernels from the exponential-power family.
 #' @export
-kern_exponentiel_power <- function(dist, scal, shap) {
+kern_exponential_power <- function(dist, scal, shap) {
     stopifnot(dist >= 0 & scal > 0 & shap > 0)
     gam <- gamma(2/shap)
     return(shap/(2 * pi * scal * scal * gam) * exp(-(dist/scal)^shap))

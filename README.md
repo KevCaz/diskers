@@ -6,11 +6,14 @@ recruitment analyses.
 
     ## Loading recruitR
 
-Last 'README' update: 2016-11-20
+    ## Warning in setup_ns_exports(pkg, export_all): Objects listed as exports,
+    ## but not present in namespace: kern_exponentiel_power
+
+Last 'README' update: 2016-11-21
 
 [![Travis](https://travis-ci.org/KevCaz/recruitR.svg?branch=master)](https://travis-ci.org/KevCaz/recruitR)
 [![Build
-status](https://ci.appveyor.com/api/projects/status/sk3sbvusvcyy0at0?svg=true)](https://ci.appveyor.com/project/KevCaz/recruitr)
+status](https://ci.appveyor.com/api/projects/status/sk3sbvusvcyy0at0?svg=true)](https://ci.appveyor.com/project/KevCaz/recruitr/build/1.0.7)
 [![codecov](https://codecov.io/gh/KevCaz/recruitR/branch/master/graphs/badge.svg)](https://codecov.io/gh/KevCaz/recruitR)
 
 Installation

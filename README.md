@@ -17,7 +17,7 @@ At this stage, I have simply I picked up 5 common seeds dispersal kernel in whic
 Current statut
 --------------
 
-Last 'README' update: 2016-11-21
+Last 'README' update: 2016-11-23
 
 [![Travis](https://travis-ci.org/KevCaz/recruitR.svg?branch=master)](https://travis-ci.org/KevCaz/recruitR) [![Build status](https://ci.appveyor.com/api/projects/status/sk3sbvusvcyy0at0?svg=true)](https://ci.appveyor.com/project/KevCaz/recruitr/build/1.0.7) [![codecov](https://codecov.io/gh/KevCaz/recruitR/branch/master/graphs/badge.svg)](https://codecov.io/gh/KevCaz/recruitR)
 
@@ -42,8 +42,9 @@ Examples
 
 A simple call to one on the kernel:
 
-``` {r]
+``` r
 kern_gaussian(4, 3)
+#> [1] 0.005977623
 ```
 
 Simple plots:
@@ -55,7 +56,7 @@ seqx <- seq(0,10,0.001)
 plot(seqx, kern_gaussian(seqx, .5), type='l')
 ```
 
-![](inst/unnamed-chunk-2-1.png)
+![](inst/unnamed-chunk-3-1.png)
 
 1.  Log\_normal kernel:
 
@@ -63,7 +64,7 @@ plot(seqx, kern_gaussian(seqx, .5), type='l')
 plot(seqx, kern_lognormal(seqx, 3, .2), type='l')
 ```
 
-![](inst/unnamed-chunk-3-1.png)
+![](inst/unnamed-chunk-4-1.png)
 
 1.  Exponential\_powerl kernel:
 
@@ -71,4 +72,4 @@ plot(seqx, kern_lognormal(seqx, 3, .2), type='l')
 plot(seqx, kern_exponential_power(seqx,2,3), type='l')
 ```
 
-![](inst/unnamed-chunk-4-1.png)
+![](inst/unnamed-chunk-5-1.png)

@@ -14,7 +14,7 @@
 #' @return The pdf values at distance \code{dist}.
 #'
 #' @examples
-#' seqx <- seq(0,10,0.001)
+#' seqx <- seq(0,10,0.01)
 #' plot(seqx, kern_lognormal(seqx,3,.2), type='l')
 
 

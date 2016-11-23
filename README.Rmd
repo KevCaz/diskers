@@ -63,7 +63,7 @@ library(recruitR)
 
 A simple call to one on the kernel:
 
-```{r]
+```{r}
 kern_gaussian(4, 3)
 ```
 

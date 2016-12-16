@@ -10,7 +10,9 @@ Depends:
     R (>= 3.2.3)
 License: GPL-3
 LazyData: true
+LinkingTo: Rcpp
 Imports:
+    Rcpp (>= 0.12.7),
     magrittr,
     GenSA
 Suggests:

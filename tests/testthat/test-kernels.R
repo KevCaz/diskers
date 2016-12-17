@@ -25,3 +25,7 @@ test_that("checking errors", {
   expect_error(kern_2Dt(0, 0, 2))
   expect_error(kern_lognormal(0, 0, 2))
 })
+
+test_that("checking list of kernels", {
+  expect_equal(kernels(), 0)
+})

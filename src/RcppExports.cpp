@@ -5,6 +5,16 @@
 
 using namespace Rcpp;
 
+// kernels
+int kernels();
+RcppExport SEXP recruitR_kernels() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(kernels());
+    return rcpp_result_gen;
+END_RCPP
+}
 // kern_gaussian
 NumericVector kern_gaussian(NumericVector dist, double scal);
 RcppExport SEXP recruitR_kern_gaussian(SEXP distSEXP, SEXP scalSEXP) {

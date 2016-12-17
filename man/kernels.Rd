@@ -9,6 +9,8 @@
 \alias{kernels}
 \title{Common seed isotropic dispersal kernels.}
 \usage{
+kernels()
+
 kern_gaussian(dist, scal)
 
 kern_exponential(dist, scal)
@@ -34,9 +36,7 @@ This is a set of five disersal kernel commonly used to model seeds dispersal.
 }
 \section{Functions}{
 \itemize{
-\item \code{kern_gaussian}: Gaussian kernel.
-\deqn{k(NumericVector dist, scal) = \frac{1}{pi*scal^2}
-exp\left(-\left(\frac{dist}{scal}\right)^2\right)}
+\item \code{kern_gaussian}: Exponential kernel.
 
 \item \code{kern_exponential}: Exponential kernel.
 
@@ -52,5 +52,10 @@ plot(seqx, kern_lognormal(seqx,3,.2), type='l')
 }
 \author{
 Kevin Cazelles
+}
+\references{
+Nathan, R., Klein, E., Robledo-Arnuncio, J. J. & Revilla, E.
+in Dispersal Ecology and Evolution 186–210 (Oxford University Press, 2012).
+doi:10.1093/acprof:oso/9780199608898.003.0015
 }
 

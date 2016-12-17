@@ -5,7 +5,6 @@ using namespace Rcpp;
 
 //' @name kernels
 //' @title Common seed isotropic dispersal kernels.
-//'
 //' @description This is a set of five disersal kernel commonly used to model seeds dispersal.
 //'
 //' @author
@@ -20,11 +19,22 @@ using namespace Rcpp;
 //' @examples
 //' seqx <- seq(0,10,0.01)
 //' plot(seqx, kern_lognormal(seqx,3,.2), type='l')
+//' @references
+//' Nathan, R., Klein, E., Robledo-Arnuncio, J. J. & Revilla, E.
+//' in Dispersal Ecology and Evolution 186–210 (Oxford University Press, 2012).
+//' doi:10.1093/acprof:oso/9780199608898.003.0015
 //' @export
+// [[Rcpp::export]]
+int kernels() {
+  Rcpp::Rcout << "1- kern_gaussian()" << std::endl;
+  Rcpp::Rcout << "2- kern_exponential()" << std::endl;
+  Rcpp::Rcout << "3- kern_exponential_power()" << std::endl;
+  Rcpp::Rcout << "4- kern_2Dt()" << std::endl;
+  Rcpp::Rcout << "5- kern_lognormal()" << std::endl;
+  return(0);
+}
 
-//' @describeIn kernels Gaussian kernel.
-//' \deqn{k(NumericVector dist, scal) = \frac{1}{pi*scal^2}
-//' exp\left(-\left(\frac{dist}{scal}\right)^2\right)}
+//' @describeIn kernels Exponential kernel.
 //' @export
 // [[Rcpp::export]]
 NumericVector kern_gaussian(NumericVector dist, double scal) {
@@ -92,7 +102,6 @@ NumericVector kern_2Dt(NumericVector dist, double scal, double shap) {
   }
   return(pdfval);
 }
-//
 //' @describeIn kernels Lognormal kernel.
 //' @export
 // [[Rcpp::export]]

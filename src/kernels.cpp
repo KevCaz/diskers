@@ -20,17 +20,18 @@ using namespace Rcpp;
 //' seqx <- seq(0,10,0.01)
 //' plot(seqx, kern_lognormal(seqx,3,.2), type='l')
 //' @references
-//' Nathan, R., Klein, E., Robledo-Arnuncio, J. J. & Revilla, E.
-//' in Dispersal Ecology and Evolution 186–210 (Oxford University Press, 2012).
-//' doi:10.1093/acprof:oso/9780199608898.003.0015
+//' Nathan, R., Klein, E., Robledo-Arnuncio, J. J. and Revilla, E. (2012).
+//' \code{Dispersal kernels: review} in Dispersal Ecology and Evolution,
+//' 186–210. Oxford University Press.
 //' @export
 // [[Rcpp::export]]
 int kernels() {
-  Rcpp::Rcout << "1- kern_gaussian()" << std::endl;
-  Rcpp::Rcout << "2- kern_exponential()" << std::endl;
-  Rcpp::Rcout << "3- kern_exponential_power()" << std::endl;
-  Rcpp::Rcout << "4- kern_2Dt()" << std::endl;
-  Rcpp::Rcout << "5- kern_lognormal()" << std::endl;
+  Rcpp::Rcout << "available kernels:" << std::endl;
+  Rcpp::Rcout << "kern_gaussian()" << std::endl;
+  Rcpp::Rcout << "kern_exponential()" << std::endl;
+  Rcpp::Rcout << "kern_exponential_power()" << std::endl;
+  Rcpp::Rcout << "kern_2Dt()" << std::endl;
+  Rcpp::Rcout << "kern_lognormal()" << std::endl;
   return(0);
 }
 

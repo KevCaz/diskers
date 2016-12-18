@@ -1,5 +1,5 @@
 rfun := $(wildcard R/*.R)
-rman := $(wildcard man/)
+rman := $(wildcard man/*.Rd)
 rtes := $(wildcard tests/testthat/*.R)
 rsrc := $(wildcard src/)
 rdm = README.Rmd

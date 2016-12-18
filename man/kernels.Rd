@@ -54,8 +54,8 @@ plot(seqx, kern_lognormal(seqx,3,.2), type='l')
 Kevin Cazelles
 }
 \references{
-Nathan, R., Klein, E., Robledo-Arnuncio, J. J. & Revilla, E.
-in Dispersal Ecology and Evolution 186–210 (Oxford University Press, 2012).
-doi:10.1093/acprof:oso/9780199608898.003.0015
+Nathan, R., Klein, E., Robledo-Arnuncio, J. J. and Revilla, E. (2012).
+\code{Dispersal kernels: review} in Dispersal Ecology and Evolution,
+186–210. Oxford University Press.
 }
 

@@ -19,5 +19,7 @@ Suggests:
     knitr,
     rmarkdown,
     testthat
+NeedsCompilation: yes
+License: GPL3
 VignetteBuilder: knitr
 RoxygenNote: 5.0.1

@@ -17,10 +17,10 @@
 #' @examples
 #' seqx <- seq(0,10,0.01)
 #' plot(seqx, kern_lognormal(seqx,3,.2), type='l')
-#' @references
-#' Nathan, R., Klein, E., Robledo-Arnuncio, J. J. and Revilla, E. (2012).
-#' \code{Dispersal kernels: review} in Dispersal Ecology and Evolution,
-#' 186–210. Oxford University Press.
+# @references
+# Nathan, R., Klein, E., Robledo-Arnuncio, J. J. and Revilla, E. (2012).
+# \code{Dispersal kernels: review} in Dispersal Ecology and Evolution,
+# 186–210. Oxford University Press.
 #' @export
 kernels <- function() {
     .Call('recruitR_kernels', PACKAGE = 'recruitR')
@@ -55,4 +55,3 @@ kern_2Dt <- function(dist, scal, shap) {
 kern_lognormal <- function(dist, scal, shap) {
     .Call('recruitR_kern_lognormal', PACKAGE = 'recruitR', dist, scal, shap)
 }
-

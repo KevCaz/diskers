@@ -1,9 +1,13 @@
 language: r
 warnings_are_errors: true
-sudo: required
+sudo: false
 
 r_packages:
-  - covr
+- covr
 
 after_success:
-  - Rscript -e 'covr::codecov()'
+- Rscript -e 'covr::codecov()'
+
+#r_github_packages
+r_github_packages:
+- jimhester/covr

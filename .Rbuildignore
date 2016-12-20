@@ -7,3 +7,5 @@
 ^pkg2date\.R
 ^README\.rmd
 ^record*
+^src/Makevars\.local$
+.Rprofile

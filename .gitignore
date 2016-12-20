@@ -35,3 +35,10 @@ vignettes/*.pdf
 # MacOs files
 .DS_Store
 record_updates.txt
+
+# Rcpp
+/src/*.o
+/src/*.o-*
+/src/*.d
+/src/*.so
+*.dll

@@ -6,6 +6,7 @@ Authors@R: c(
   person("Kevin", "Solarik", role = c("aut"))
   )
 Description: set of R function to perform seeds recruitment analyses.
+BugReports: https://github.com/KevCaz/recruitR/issues
 Depends:
     R (>= 3.2.3)
 License: GPL-3

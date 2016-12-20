@@ -20,6 +20,6 @@ Suggests:
     rmarkdown,
     testthat
 NeedsCompilation: yes
-License: GPL3
+License: MIT + file LICENSE
 VignetteBuilder: knitr
 RoxygenNote: 5.0.1

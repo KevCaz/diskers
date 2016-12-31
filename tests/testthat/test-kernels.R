@@ -2,7 +2,7 @@ library(recruitR)
 context("Test kernels")
 
 
-p2 <- pi+pi
+p2 <- 2*+pi
 res1 <- integrate(function(x) x*kern_gaussian(x,2), 0, Inf)$value*p2
 res2 <- integrate(function(x) x*kern_exponential(x,2), 0, Inf)$value*p2
 res3 <- integrate(function(x) x*kern_exponential_power(x,2,3), 0, Inf)$value*p2

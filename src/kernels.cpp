@@ -26,7 +26,7 @@ using namespace Rcpp;
 //' @export
 // [[Rcpp::export]]
 int kernels() {
-  Rcpp::Rcout << "available kernels:" << std::endl;
+  Rcpp::Rcout << std::endl << "Available kernels are:" << std::endl;
   Rcpp::Rcout << "kern_gaussian()" << std::endl;
   Rcpp::Rcout << "kern_exponential()" << std::endl;
   Rcpp::Rcout << "kern_exponential_power()" << std::endl;

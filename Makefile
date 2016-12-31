@@ -1,7 +1,7 @@
 rfun := $(wildcard R/*.R)
 rman := $(wildcard man/*.Rd)
 rtes := $(wildcard tests/testthat/*.R)
-rsrc := $(wildcard src/)
+rsrc := $(wildcard src)
 rdm = README.Rmd
 md = README.md
 chk = record_updates.txt

@@ -31,7 +31,7 @@ plot(seqx, kern_lognormal(seqx,3,.2), type='l')
 Kevin Cazelles
 }
 \references{
-Nathan, R., Klein, E., Robledo-Arnuncio, J.J. and Revilla, E. (2012) 
+Nathan, R., Klein, E., Robledo-Arnuncio, J.J. and Revilla, E. (2012)
 Dipsersal Kernels: Review in _Dispersal Ecology and Evolution_. Oxford University Press.
 }
 

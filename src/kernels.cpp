@@ -20,7 +20,7 @@ using namespace Rcpp;
 //' seqx <- seq(0,10,0.01)
 //' plot(seqx, kern_lognormal(seqx,3,.2), type='l')
 //' @references
-//' Nathan, R., Klein, E., Robledo-Arnuncio, J.J. and Revilla, E. (2012) 
+//' Nathan, R., Klein, E., Robledo-Arnuncio, J.J. and Revilla, E. (2012)
 //' Dipsersal Kernels: Review in _Dispersal Ecology and Evolution_. Oxford University Press.
 //' @export
 // [[Rcpp::export]]

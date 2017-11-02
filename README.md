@@ -40,35 +40,44 @@ kern_gaussian(4, 3)
 R>> [1] 0.005977623
 ```
 
+Mean dispersal distance
+
+``` r
+meanDispDist('gaussian', 5)
+R>> [1] 4.431135
+```
+
 ### Figure
 
 1.  Gaussian kernel:
 
 ``` r
-seqx <- seq(0,10,0.001)
-par(las=2, bty='n')
+seqx <- seq(0, 10, 0.001)
+par(las=1, bty='L')
 plot(seqx, kern_gaussian(seqx, .5), type='l', lwd=2, col='#0366d6', xlab='Distance', ylab='Density')
-```
-
-![](inst/unnamed-chunk-3-1.png)
-
-1.  Log\_normal kernel:
-
-``` r
-plot(seqx, kern_lognormal(seqx, 3, .2), type='l', lwd=2, col='#0366d6', xlab='Distance', ylab='Density')
 ```
 
 ![](inst/unnamed-chunk-4-1.png)
 
-1.  Exponential\_power kernel:
+1.  Log\_normal kernel:
 
 ``` r
-plot(seqx, kern_exponential_power(seqx,2,3), type='l', lwd=2, col='#0366d6', xlab='Distance', ylab='Density')
+par(las=1, bty='L')
+plot(seqx, kern_lognormal(seqx, 3, .2), type='l', lwd=2, col='#0366d6', xlab='Distance', ylab='Density')
 ```
 
 ![](inst/unnamed-chunk-5-1.png)
 
+1.  Exponential\_power kernel:
+
+``` r
+par(las=1, bty='L')
+plot(seqx, kern_exponential_power(seqx,2,3), type='l', lwd=2, col='#0366d6', xlab='Distance', ylab='Density')
+```
+
+![](inst/unnamed-chunk-6-1.png)
+
 References
 ----------
 
-1.  Nathan, R., Klein, E., Robledo-Arnuncio, J. J. & Revilla, E. in Dispersal Ecology and Evolution 186–210 (Oxford University Press, 2012). [doi:10.1093/acprof:oso/9780199608898.003.0015](https://doi.org/10.1093/acprof:oso/9780199608898.003.0015)
+1.  Nathan, R., Klein, E., Robledo-Arnuncio, J. J. & Revilla, E. in Dispersal Ecology and Evolution 186–210 (Oxford University Press, 2012) -- [doi:10.1093/acprof:oso/9780199608898.003.0015](https://doi.org/10.1093/acprof:oso/9780199608898.003.0015).

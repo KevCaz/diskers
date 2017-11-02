@@ -5,24 +5,20 @@ output:
 ---
 
 
-# Overview
-
-## Description
+## recruitR
 
 **'recruitR'**: A R package including useful functions for tree
 recruitment analyses.
 
-At this stage, I have simply I picked up 5 common seeds dispersal kernel in which all are isotropic:
-
-1. Nathan, R., Klein, E., Robledo-Arnuncio, J. J. & Revilla, E. in Dispersal Ecology and Evolution 186–210 (Oxford University Press, 2012). [doi:10.1093/acprof:oso/9780199608898.003.0015](https://doi.org/10.1093/acprof:oso/9780199608898.003.0015 )
-
+At this stage, 5 common seeds isotropic dispersal kernels are implemented, they
+were selected Nathan et al. (2012).
 
 
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(
   fig.path = "inst/",
-  comment = "#>",
+  comment = "R>>",
   collapse = TRUE,
   warning = FALSE,
   message = FALSE,
@@ -32,7 +28,7 @@ knitr::opts_chunk$set(
 devtools::load_all(".")
 ```
 
-## Current statut
+## Current status
 
 Last 'README' update: `r format(Sys.time(), '%Y-%m-%d')`
 
@@ -67,21 +63,36 @@ A simple call to one on the kernel:
 kern_gaussian(4, 3)
 ```
 
-Simple plots:
+Mean dispersal distance
+
+meanDispDist('guassian', 5)
+
+
+
+### Figure
 
 1. Gaussian kernel:
 
 ```{r,  fig.width=6,  fig.height=6}
 seqx <- seq(0,10,0.001)
-plot(seqx, kern_gaussian(seqx, .5), type='l')
+par(las=2, bty='n')
+plot(seqx, kern_gaussian(seqx, .5), type='l', lwd=2, col='#0366d6', xlab='Distance', ylab='Density')
 ```
 
 2. Log_normal kernel:
+
 ```{r,  fig.width=6,  fig.height=6}
-plot(seqx, kern_lognormal(seqx, 3, .2), type='l')
+plot(seqx, kern_lognormal(seqx, 3, .2), type='l', lwd=2, col='#0366d6', xlab='Distance', ylab='Density')
 ```
 
-3. Exponential_powerl kernel:
+3. Exponential_power kernel:
+
 ```{r,  fig.width=6,  fig.height=6}
-plot(seqx, kern_exponential_power(seqx,2,3), type='l')
+plot(seqx, kern_exponential_power(seqx,2,3), type='l', lwd=2, col='#0366d6', xlab='Distance', ylab='Density')
 ```
+
+
+## References
+
+1. Nathan, R., Klein, E., Robledo-Arnuncio, J. J. & Revilla, E. in Dispersal
+Ecology and Evolution 186–210 (Oxford University Press, 2012). [doi:10.1093/acprof:oso/9780199608898.003.0015](https://doi.org/10.1093/acprof:oso/9780199608898.003.0015 )

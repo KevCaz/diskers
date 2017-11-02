@@ -20,11 +20,10 @@ test_that("checking integration", {
   expect_equal(round(res5, 2L), round(meanDispDist("lognormal", scal=sc, shap=sh),2))
 })
 
-# test_that("checking errors", {
-#   expect_error(kern_gaussian(0, 0))
-#   expect_error(kern_exponential(0, 0))
-#   expect_error(fkern_exponential_power(0, 0, 2))
-#   expect_error(kern_2Dt(0, 0, 2))
-#   expect_error(kern_lognormal(0, 0, 2))
-# })
-#
+
+test_that("checking errors", {
+  expect_error(meanDispDist('gausian', 2))
+  expect_error(meanDispDist("exponential_power", scal=2))
+  expect_error(meanDispDist("k2Dt", scal=2))
+  expect_error(meanDispDist("lognormal", scal=2))
+})

@@ -17,21 +17,20 @@ meanDispDist(name, scal, shap = NULL)
 The mean dispersal distance.
 }
 \description{
-Mean dispersal distance for five disersal kernel commonly used to model seeds dispersal.
+Mean dispersal distance for the five disersal kernel implemented.
 }
 \details{
-Currently valid names are \code{gaussian}, \code{exponential},
+Currently, valid names are \code{gaussian}, \code{exponential},
 \code{exponential_power}, \code{k2Dt} and \code{lognormal}.
 }
 \examples{
-seqx <- seq(0,10,0.01)
-plot(seqx, kern_lognormal(seqx,3,.2), type='l')
-}
-\author{
-Kevin Cazelles
+meanDispDist('gaussian', 10)
+
 }
 \references{
 Nathan, R., Klein, E., Robledo-Arnuncio, J.J. and Revilla, E. (2012)
 Dipsersal Kernels: Review in _Dispersal Ecology and Evolution_. Oxford University Press.
 }
-
+\author{
+Kevin Cazelles
+}

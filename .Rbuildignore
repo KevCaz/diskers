@@ -4,8 +4,7 @@
 ^\.travis\.yml$
 ^\.gitignore
 ^Makefile
-^pkg2date\.R
-^README\.rmd
+^README\.Rmd
 ^record*
 ^src/Makevars\.local$
 .Rprofile

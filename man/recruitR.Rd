@@ -11,4 +11,3 @@ R package to assess seeds recruitment
 \author{
 Kevin Cazelles <kevin.cazelles@gmail.com>
 }
-

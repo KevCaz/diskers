@@ -1,6 +1,6 @@
 #' @name meanDispDist
 #' @title Mean Dispersal Ditances
-#' @description Mean dispersal distance for five disersal kernel commonly used to model seeds dispersal.
+#' @description Mean dispersal distance for the five disersal kernel implemented.
 #'
 #' @author
 #' Kevin Cazelles
@@ -10,19 +10,22 @@
 #' @param shap a real positive number giving the shape parameter of the kernel.
 #'
 #' @details
-#' Currently valid names are \code{gaussian}, \code{exponential},
+#' Currently, valid names are \code{gaussian}, \code{exponential},
 #' \code{exponential_power}, \code{k2Dt} and \code{lognormal}.
 #'
 #' @return The mean dispersal distance.
 #'
 #' @examples
-#' seqx <- seq(0,10,0.01)
-#' plot(seqx, kern_lognormal(seqx,3,.2), type='l')
+#' meanDispDist('gaussian', 10)
+#'
 #' @references
 #' Nathan, R., Klein, E., Robledo-Arnuncio, J.J. and Revilla, E. (2012)
 #' Dipsersal Kernels: Review in _Dispersal Ecology and Evolution_. Oxford University Press.
+#'
 #' @export
 meanDispDist <- function(name, scal, shap = NULL) {
+    stopifnot(name %in% c("gaussian", "exponential", "exponential_power", "k2Dt", 
+        "lognormal"))
     switch(name, gaussian = meanDispDist_gaussian(scal = scal), exponential = meanDispDist_exponential(scal = scal), 
         exponential_power = meanDispDist_exponential_power(scal = scal, shap = shap), 
         k2Dt = meanDispDist_2Dt(scal = scal, shap = shap), lognormal = meanDispDist_lognormal(scal = scal, 

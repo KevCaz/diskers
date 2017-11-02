@@ -1,6 +1,6 @@
 Package: recruitR
 Title: R package to assess seeds recruitment
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: c(
   person("Kevin", "Cazelles", email = "kevin.cazelles@um2.fr", role = c("aut", "cre")),
   person("Kevin", "Solarik", role = c("aut"))
@@ -13,14 +13,11 @@ License: GPL-3
 LazyData: true
 LinkingTo: Rcpp
 Imports:
-    Rcpp (>= 0.12.7),
-    magrittr,
-    GenSA
+    Rcpp (>= 0.12.7)
 Suggests:
     knitr,
     rmarkdown,
     testthat
 NeedsCompilation: yes
-License: MIT + file LICENSE
 VignetteBuilder: knitr
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1

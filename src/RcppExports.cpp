@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // kernels
 int kernels();
-RcppExport SEXP recruitR_kernels() {
+RcppExport SEXP _recruitR_kernels() {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -17,7 +17,7 @@ END_RCPP
 }
 // kern_gaussian
 NumericVector kern_gaussian(NumericVector dist, double scal);
-RcppExport SEXP recruitR_kern_gaussian(SEXP distSEXP, SEXP scalSEXP) {
+RcppExport SEXP _recruitR_kern_gaussian(SEXP distSEXP, SEXP scalSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -29,7 +29,7 @@ END_RCPP
 }
 // kern_exponential
 NumericVector kern_exponential(NumericVector dist, double scal);
-RcppExport SEXP recruitR_kern_exponential(SEXP distSEXP, SEXP scalSEXP) {
+RcppExport SEXP _recruitR_kern_exponential(SEXP distSEXP, SEXP scalSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -41,7 +41,7 @@ END_RCPP
 }
 // kern_exponential_power
 NumericVector kern_exponential_power(NumericVector dist, double scal, double shap);
-RcppExport SEXP recruitR_kern_exponential_power(SEXP distSEXP, SEXP scalSEXP, SEXP shapSEXP) {
+RcppExport SEXP _recruitR_kern_exponential_power(SEXP distSEXP, SEXP scalSEXP, SEXP shapSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -54,7 +54,7 @@ END_RCPP
 }
 // kern_2Dt
 NumericVector kern_2Dt(NumericVector dist, double scal, double shap);
-RcppExport SEXP recruitR_kern_2Dt(SEXP distSEXP, SEXP scalSEXP, SEXP shapSEXP) {
+RcppExport SEXP _recruitR_kern_2Dt(SEXP distSEXP, SEXP scalSEXP, SEXP shapSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -67,7 +67,7 @@ END_RCPP
 }
 // kern_lognormal
 NumericVector kern_lognormal(NumericVector dist, double scal, double shap);
-RcppExport SEXP recruitR_kern_lognormal(SEXP distSEXP, SEXP scalSEXP, SEXP shapSEXP) {
+RcppExport SEXP _recruitR_kern_lognormal(SEXP distSEXP, SEXP scalSEXP, SEXP shapSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -77,4 +77,19 @@ BEGIN_RCPP
     rcpp_result_gen = Rcpp::wrap(kern_lognormal(dist, scal, shap));
     return rcpp_result_gen;
 END_RCPP
+}
+
+static const R_CallMethodDef CallEntries[] = {
+    {"_recruitR_kernels", (DL_FUNC) &_recruitR_kernels, 0},
+    {"_recruitR_kern_gaussian", (DL_FUNC) &_recruitR_kern_gaussian, 2},
+    {"_recruitR_kern_exponential", (DL_FUNC) &_recruitR_kern_exponential, 2},
+    {"_recruitR_kern_exponential_power", (DL_FUNC) &_recruitR_kern_exponential_power, 3},
+    {"_recruitR_kern_2Dt", (DL_FUNC) &_recruitR_kern_2Dt, 3},
+    {"_recruitR_kern_lognormal", (DL_FUNC) &_recruitR_kern_lognormal, 3},
+    {NULL, NULL, 0}
+};
+
+RcppExport void R_init_recruitR(DllInfo *dll) {
+    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
+    R_useDynamicSymbols(dll, FALSE);
 }

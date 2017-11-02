@@ -4,7 +4,7 @@
 #'
 #' @docType package
 #' @author Kevin Cazelles <kevin.cazelles@gmail.com>
-#' @import Rcpp magrittr GenSA
+#' @import Rcpp
 #' @importFrom Rcpp evalCpp
 #' @useDynLib recruitR
 #' @name recruitR

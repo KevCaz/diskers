@@ -1,5 +1,5 @@
 #' @name meanDispDist
-#' @title Mean dispersal ditance
+#' @title Mean dispersal distance
 #' @description Mean dispersal distance for the five disersal kernel implemented.
 #'
 #' @author
@@ -24,11 +24,11 @@
 #'
 #' @export
 meanDispDist <- function(name, scal, shap = NULL) {
-    stopifnot(name %in% c("gaussian", "exponential", "exponential_power", "k2Dt",
+    stopifnot(name %in% c("gaussian", "exponential", "exponential_power", "k2Dt", 
         "lognormal"))
-    switch(name, gaussian = meanDispDist_gaussian(scal = scal), exponential = meanDispDist_exponential(scal = scal),
-        exponential_power = meanDispDist_exponential_power(scal = scal, shap = shap),
-        k2Dt = meanDispDist_2Dt(scal = scal, shap = shap), lognormal = meanDispDist_lognormal(scal = scal,
+    switch(name, gaussian = meanDispDist_gaussian(scal = scal), exponential = meanDispDist_exponential(scal = scal), 
+        exponential_power = meanDispDist_exponential_power(scal = scal, shap = shap), 
+        k2Dt = meanDispDist_2Dt(scal = scal, shap = shap), lognormal = meanDispDist_lognormal(scal = scal, 
             shap = shap))
 }
 

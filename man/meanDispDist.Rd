@@ -2,7 +2,7 @@
 % Please edit documentation in R/meanDispDist.R
 \name{meanDispDist}
 \alias{meanDispDist}
-\title{Mean Dispersal Ditances}
+\title{Mean dispersal distance}
 \usage{
 meanDispDist(name, scal, shap = NULL)
 }

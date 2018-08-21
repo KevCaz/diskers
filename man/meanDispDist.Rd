@@ -7,7 +7,7 @@
 meanDispDist(name, scal, shap = NULL)
 }
 \arguments{
-\item{name}{a character names of the dispersal kernel chosen.}
+\item{name}{a character string that names of the dispersal kernel chosen.}
 
 \item{scal}{a real positive number giving the scale parameter of the kernel.}
 
@@ -29,7 +29,7 @@ meanDispDist('gaussian', 10)
 }
 \references{
 Nathan, R., Klein, E., Robledo-Arnuncio, J.J. and Revilla, E. (2012)
-Dipsersal Kernels: Review in _Dispersal Ecology and Evolution_. Oxford University Press.
+Dipsersal Kernels: Review in \emph{Dispersal Ecology and Evolution}. Oxford University Press.
 }
 \author{
 Kevin Cazelles

@@ -6,8 +6,8 @@
 \alias{recruitR-package}
 \title{recruitR}
 \description{
-R package to assess seeds recruitment
+R package to assess seeds recruitment.
 }
 \author{
-Kevin Cazelles <kevin.cazelles@gmail.com>
+Kevin Cazelles \href{mailto:kevin.cazelles@gmail.com}{kevin.cazelles@gmail.com}
 }

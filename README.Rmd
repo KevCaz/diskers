@@ -1,17 +1,14 @@
 ---
 output:
-  md_document:
-    variant: markdown_github
+  md_document
 ---
 
 
 ## recruitR
 
-**'recruitR'**: A R package including useful functions for tree
-recruitment analyses.
-
-At this stage, 5 common seeds isotropic dispersal kernels are implemented, they
-were selected Nathan et al. (2012).
+**'recruitR'**: A R package including functions for tree recruitment analyses.
+At this stage, 5 common seeds isotropic dispersal kernels have been implemented
+together with their mean dispersal ditance (Nathan et al. 2012).
 
 
 

@@ -1,6 +1,6 @@
 #' recruitR
 #'
-#' R package to assess seeds recruitment
+#' R package to assess seeds recruitment.
 #'
 #' @docType package
 #' @author Kevin Cazelles <kevin.cazelles@gmail.com>

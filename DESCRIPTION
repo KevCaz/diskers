@@ -6,7 +6,7 @@ Authors@R: c(
   person("Kevin", "Solarik", role = c("aut"))
   )
 Description: Implement dispersal kernels commonly used in seeds recruitment analyses.
-URL: http://kevcaz.github.io/diskers/
+URL: https://github.com/KevCaz/diskers, http://kevcaz.github.io/diskers/
 BugReports: https://github.com/KevCaz/diskers/issues
 Depends:
     R (>= 3.0.0)

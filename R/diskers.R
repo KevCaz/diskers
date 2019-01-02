@@ -6,6 +6,6 @@
 #' @author Kevin Cazelles <kevin.cazelles@gmail.com>
 #' @import Rcpp
 #' @importFrom Rcpp evalCpp
-#' @useDynLib recruitR
-#' @name recruitR
+#' @useDynLib diskers
+#' @name diskers
 NULL

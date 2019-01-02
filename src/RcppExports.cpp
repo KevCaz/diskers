@@ -6,18 +6,17 @@
 using namespace Rcpp;
 
 // kernels
-int kernels();
-RcppExport SEXP _recruitR_kernels() {
+void kernels();
+RcppExport SEXP _diskers_kernels() {
 BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(kernels());
-    return rcpp_result_gen;
+    kernels();
+    return R_NilValue;
 END_RCPP
 }
 // kern_gaussian
 NumericVector kern_gaussian(NumericVector dist, double scal);
-RcppExport SEXP _recruitR_kern_gaussian(SEXP distSEXP, SEXP scalSEXP) {
+RcppExport SEXP _diskers_kern_gaussian(SEXP distSEXP, SEXP scalSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -29,7 +28,7 @@ END_RCPP
 }
 // kern_exponential
 NumericVector kern_exponential(NumericVector dist, double scal);
-RcppExport SEXP _recruitR_kern_exponential(SEXP distSEXP, SEXP scalSEXP) {
+RcppExport SEXP _diskers_kern_exponential(SEXP distSEXP, SEXP scalSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -41,7 +40,7 @@ END_RCPP
 }
 // kern_exponential_power
 NumericVector kern_exponential_power(NumericVector dist, double scal, double shap);
-RcppExport SEXP _recruitR_kern_exponential_power(SEXP distSEXP, SEXP scalSEXP, SEXP shapSEXP) {
+RcppExport SEXP _diskers_kern_exponential_power(SEXP distSEXP, SEXP scalSEXP, SEXP shapSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -54,7 +53,7 @@ END_RCPP
 }
 // kern_2Dt
 NumericVector kern_2Dt(NumericVector dist, double scal, double shap);
-RcppExport SEXP _recruitR_kern_2Dt(SEXP distSEXP, SEXP scalSEXP, SEXP shapSEXP) {
+RcppExport SEXP _diskers_kern_2Dt(SEXP distSEXP, SEXP scalSEXP, SEXP shapSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -67,7 +66,7 @@ END_RCPP
 }
 // kern_lognormal
 NumericVector kern_lognormal(NumericVector dist, double scal, double shap);
-RcppExport SEXP _recruitR_kern_lognormal(SEXP distSEXP, SEXP scalSEXP, SEXP shapSEXP) {
+RcppExport SEXP _diskers_kern_lognormal(SEXP distSEXP, SEXP scalSEXP, SEXP shapSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -80,16 +79,16 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_recruitR_kernels", (DL_FUNC) &_recruitR_kernels, 0},
-    {"_recruitR_kern_gaussian", (DL_FUNC) &_recruitR_kern_gaussian, 2},
-    {"_recruitR_kern_exponential", (DL_FUNC) &_recruitR_kern_exponential, 2},
-    {"_recruitR_kern_exponential_power", (DL_FUNC) &_recruitR_kern_exponential_power, 3},
-    {"_recruitR_kern_2Dt", (DL_FUNC) &_recruitR_kern_2Dt, 3},
-    {"_recruitR_kern_lognormal", (DL_FUNC) &_recruitR_kern_lognormal, 3},
+    {"_diskers_kernels", (DL_FUNC) &_diskers_kernels, 0},
+    {"_diskers_kern_gaussian", (DL_FUNC) &_diskers_kern_gaussian, 2},
+    {"_diskers_kern_exponential", (DL_FUNC) &_diskers_kern_exponential, 2},
+    {"_diskers_kern_exponential_power", (DL_FUNC) &_diskers_kern_exponential_power, 3},
+    {"_diskers_kern_2Dt", (DL_FUNC) &_diskers_kern_2Dt, 3},
+    {"_diskers_kern_lognormal", (DL_FUNC) &_diskers_kern_lognormal, 3},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_recruitR(DllInfo *dll) {
+RcppExport void R_init_diskers(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

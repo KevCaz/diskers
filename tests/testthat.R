@@ -1,4 +1,4 @@
 library(testthat)
-library(recruitR)
+library(diskers)
 
-test_check("recruitR")
+test_check("diskers")

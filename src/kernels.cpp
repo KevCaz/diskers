@@ -24,14 +24,13 @@ using namespace Rcpp;
 //' Dipsersal Kernels: Review in _Dispersal Ecology and Evolution_. Oxford University Press.
 //' @export
 // [[Rcpp::export]]
-int kernels() {
-  Rcpp::Rcout << std::endl << "Available kernels are:" << std::endl;
-  Rcpp::Rcout << "kern_gaussian()" << std::endl;
-  Rcpp::Rcout << "kern_exponential()" << std::endl;
-  Rcpp::Rcout << "kern_exponential_power()" << std::endl;
-  Rcpp::Rcout << "kern_2Dt()" << std::endl;
-  Rcpp::Rcout << "kern_lognormal()" << std::endl;
-  return(0);
+void kernels() {
+  Rcpp::Rcout << std::endl << "Dispersal kernels currently available:" << std::endl;
+  Rcpp::Rcout << "kern_gaussian() --- 2 parameters" << std::endl;
+  Rcpp::Rcout << "kern_exponential() --- 2 parameters" << std::endl;
+  Rcpp::Rcout << "kern_exponential_power() --- 3 parameters" << std::endl;
+  Rcpp::Rcout << "kern_2Dt() --- 3 parameters" << std::endl;
+  Rcpp::Rcout << "kern_lognormal() --- 3 parameters" << std::endl;
 }
 
 //' @describeIn kernels Exponential kernel.
@@ -39,7 +38,7 @@ int kernels() {
 // [[Rcpp::export]]
 NumericVector kern_gaussian(NumericVector dist, double scal) {
     if (scal <= 0.0) {
-      stop("Inadmissible value for scale prameter");
+      stop("Inadmissible value for scale prameter.");
     }
     int i;
     double scal2 = scal*scal;
@@ -56,7 +55,7 @@ NumericVector kern_gaussian(NumericVector dist, double scal) {
 // [[Rcpp::export]]
 NumericVector kern_exponential(NumericVector dist, double scal) {
     if (scal <= 0.0) {
-      stop("Inadmissible value for scale prameter");
+      stop("Inadmissible value for scale prameter.");
     }
     int i;
     NumericVector pdfval(dist.size());
@@ -71,10 +70,10 @@ NumericVector kern_exponential(NumericVector dist, double scal) {
 // [[Rcpp::export]]
 NumericVector kern_exponential_power(NumericVector dist, double scal, double shap) {
   if (scal <= 0.0) {
-    stop("Inadmissible value for scale prameter");
+    stop("Inadmissible value for scale prameter.");
   }
   if (shap <= 0.0) {
-    stop("Inadmissible value for shape prameter");
+    stop("Inadmissible value for shape prameter.");
   }
   int i;
   NumericVector pdfval(dist.size());
@@ -89,10 +88,10 @@ NumericVector kern_exponential_power(NumericVector dist, double scal, double sha
 // [[Rcpp::export]]
 NumericVector kern_2Dt(NumericVector dist, double scal, double shap) {
   if (scal <= 0.0) {
-    stop("Inadmissible value for scale prameter");
+    stop("Inadmissible value for scale prameter.");
   }
   if (shap <= 1.0) {
-    stop("Inadmissible value for shape prameter");
+    stop("Inadmissible value for shape prameter.");
   }
   int i;
   double scal2 = scal * scal;
@@ -107,10 +106,10 @@ NumericVector kern_2Dt(NumericVector dist, double scal, double shap) {
 // [[Rcpp::export]]
 NumericVector kern_lognormal(NumericVector dist, double scal, double shap) {
     if (scal <= 0.0) {
-      stop("Inadmissible value for scale prameter");
+      stop("Inadmissible value for scale prameter.");
     }
     if (shap <= 0.0) {
-      stop("Inadmissible value for shape prameter");
+      stop("Inadmissible value for shape prameter.");
     }
     int i;
     double shapinv = 1/shap;

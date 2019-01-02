@@ -1,4 +1,3 @@
-library(recruitR)
 context("Test kernels")
 
 
@@ -27,5 +26,5 @@ test_that("checking errors", {
 })
 
 test_that("checking list of kernels", {
-  expect_equal(kernels(), 0)
+  expect_true(is.null(kernels()))
 })

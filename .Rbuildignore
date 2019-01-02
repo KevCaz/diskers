@@ -1,10 +1,13 @@
+^docs$
+^_pkgdown\.yml$
 ^\.Rproj\.user$
 ^.*\.Rproj$
 ^appveyor\.yml$
 ^\.travis\.yml$
 ^\.gitignore
 ^Makefile
-^README\.Rmd
+^README\.md
 ^record*
 ^src/Makevars\.local$
 .Rprofile
+^NEWS\.md

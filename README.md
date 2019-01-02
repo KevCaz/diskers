@@ -27,7 +27,7 @@ library(diskers)
 
 ## Information
 
-See the vignettes [Get started with diskers]() for more informations.
+See the vignettes [Get started with diskers](https://kevcaz.github.io/diskers/articles/get_started.html) for more informations.
 
 
 ## References

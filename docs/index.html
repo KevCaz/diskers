@@ -77,48 +77,25 @@
 <div id="description" class="section level2">
 <h2 class="hasAnchor">
 <a href="#description" class="anchor"></a>Description</h2>
-<p>At this stage, 5 common seeds isotropic dispersal kernels have been implemented together with the corresponding mean dispersal distance (Nathan et al. 2012).</p>
+<p>At this stage, 5 common isotropic dispersal kernels have been implemented together with a function to compute the mean dispersal distances (Nathan et al. 2012).</p>
 </div>
 <div id="current-status" class="section level2">
 <h2 class="hasAnchor">
 <a href="#current-status" class="anchor"></a>Current status</h2>
-<p><a href="https://travis-ci.org/KevCaz/recruitR"><img src="https://travis-ci.org/KevCaz/recruitR.svg?branch=master" alt="Travis"></a> <a href="https://ci.appveyor.com/project/KevCaz/recruitr/build/1.0.7"><img src="https://ci.appveyor.com/api/projects/status/sk3sbvusvcyy0at0?svg=true" alt="Build status"></a> <a href="https://codecov.io/gh/KevCaz/recruitR"><img src="https://codecov.io/gh/KevCaz/recruitR/branch/master/graphs/badge.svg" alt="codecov"></a></p>
+<p><a href="https://travis-ci.org/KevCaz/recruitR"><img src="https://travis-ci.org/KevCaz/recruitR.svg?branch=master" alt="Travis"></a> <a href="https://ci.appveyor.com/project/KevCaz/diskers"><img src="https://ci.appveyor.com/api/projects/status/h1r36ififnvvk04q?svg=true" alt="Build status"></a> <a href="https://codecov.io/gh/KevCaz/recruitR"><img src="https://codecov.io/gh/KevCaz/recruitR/branch/master/graphs/badge.svg" alt="codecov"></a></p>
 </div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p>To get the current development version from Github using R, use the <a href="http://cran.r-project.org/web/packages/devtools/index.html"><em>devtools</em></a> package:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="cf">if</span> (<span class="op">!</span><span class="kw">require</span>(<span class="st">"devtools'"</span>)) <span class="kw">install.packages</span>(<span class="st">"devtools"</span>)</a>
+<p>To get the current development version from GitHub using R, use the <a href="http://cran.r-project.org/web/packages/devtools/index.html"><em>devtools</em></a> package:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">install.packages</span>(<span class="st">"devtools"</span>)</a>
 <a class="sourceLine" id="cb1-2" data-line-number="2">devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"KevCaz/recruitR"</span>)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">library</span>(disker)</a></code></pre></div>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">library</span>(diskers)</a></code></pre></div>
 </div>
-<div id="examples" class="section level2">
+<div id="information" class="section level2">
 <h2 class="hasAnchor">
-<a href="#examples" class="anchor"></a>Examples</h2>
-<div id="using-a-kernel" class="section level3">
-<h3 class="hasAnchor">
-<a href="#using-a-kernel" class="anchor"></a>Using a kernel</h3>
-<p>A simple call to one on the kernel:</p>
-<pre class="{r}"><code><a href="reference/kernels.html">kern_gaussian(4, 3)</a></code></pre>
-<p>Mean dispersal distance:</p>
-<pre class="{r}"><code><a href="reference/meanDispDist.html">meanDispDist('gaussian', 5)</a></code></pre>
-</div>
-<div id="figure" class="section level3">
-<h3 class="hasAnchor">
-<a href="#figure" class="anchor"></a>Figure</h3>
-<ol>
-<li>Gaussian kernel:</li>
-</ol>
-<p><code>{r,  fig.width=6,  fig.height=6} seqx &lt;- seq(0, 10, 0.001) par(las=1, bty='L') plot(seqx, kern_gaussian(seqx, .5), type='l', lwd=2, col='#0366d6', xlab='Distance', ylab='Density')</code></p>
-<ol>
-<li>Log_normal kernel:</li>
-</ol>
-<p><code>{r,  fig.width=6,  fig.height=6} par(las=1, bty='L') plot(seqx, kern_lognormal(seqx, 3, .2), type='l', lwd=2, col='#0366d6', xlab='Distance', ylab='Density')</code></p>
-<ol>
-<li>Exponential_power kernel:</li>
-</ol>
-<p><code>{r,  fig.width=6,  fig.height=6} par(las=1, bty='L') plot(seqx, kern_exponential_power(seqx,2,3), type='l', lwd=2, col='#0366d6', xlab='Distance', ylab='Density')</code></p>
-</div>
+<a href="#information" class="anchor"></a>Information</h2>
+<p>See the vignettes <a href="">Get started with diskers</a> for more informations.</p>
 </div>
 <div id="references" class="section level2">
 <h2 class="hasAnchor">

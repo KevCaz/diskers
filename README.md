@@ -9,7 +9,7 @@ together with a function to compute the mean dispersal distances (Nathan et al. 
 ## Current status
 
 [![Travis](https://travis-ci.org/KevCaz/recruitR.svg?branch=master)](https://travis-ci.org/KevCaz/recruitR)
-[![Build status](https://ci.appveyor.com/api/projects/status/sk3sbvusvcyy0at0?svg=true)](https://ci.appveyor.com/project/KevCaz/recruitr/build/1.0.7)
+[![Build status](https://ci.appveyor.com/api/projects/status/h1r36ififnvvk04q?svg=true)](https://ci.appveyor.com/project/KevCaz/diskers)
 [![codecov](https://codecov.io/gh/KevCaz/recruitR/branch/master/graphs/badge.svg)](https://codecov.io/gh/KevCaz/recruitR)
 
 

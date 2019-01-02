@@ -1,4 +1,3 @@
-library(recruitR)
 context("Test mean Dispersal kernel")
 
 

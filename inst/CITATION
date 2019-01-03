@@ -10,4 +10,4 @@ bibentry(bibtype = "Manual",
                     ),
          year = year,
          note = note,
-         url = "https://KevCaz.github.io/diskers/")
+         url = "https://kevcaz.github.io/diskers/")

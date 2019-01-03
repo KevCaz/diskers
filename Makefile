@@ -23,6 +23,5 @@ vignette:
 clean:
 	rm -rf man/* src/*.o src/*.so R/RcppExports.R src/RcppExports.cpp
 
-
 website:
 	Rscript --no-init-file -e "pkgdown::build_site()"

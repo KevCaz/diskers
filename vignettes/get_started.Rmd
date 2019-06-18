@@ -9,7 +9,7 @@ vignette: >
 ---
 
 
-```{r setup, echo = FALSE}
+```{r setup, include = FALSE}
 NOT_CRAN <- identical(tolower(Sys.getenv("NOT_CRAN")), "true")
 knitr::opts_chunk$set(
   purl = NOT_CRAN,
@@ -23,14 +23,14 @@ library(diskers)
 
 # Kernels
 
-There are five kernels currently available, use `kernels()` to list them:
+There are five kernels currently available, use `kernels()` to list them all:
 
 ```{r listkernels}
 kernels()
 ```
 
 First parameter is the distance at which the kernel density is evaluated,
-second is the scale parameter and the third is the shape parameter (for kernels that requires 3 parameters):
+second is the scale parameter and the third is the shape parameter (for kernels that require 3 parameters):
 
 ```{r, results = 'hold'}
 kern_gaussian(4, 3)
@@ -55,7 +55,7 @@ meanDispDist('lognormal', 3, 2)
 ```
 
 
-# Figures
+# Examples
 
 Below, we exemplify how to plot dispersal isotropic kernels with `diskers`.
 
@@ -80,6 +80,7 @@ plot(seqx, kern_lognormal(seqx, 3, .2), type='l', lwd=2, col='#0366d6', xlab='Di
 par(las = 1, bty = 'l')
 plot(seqx, kern_exponential_power(seqx,2,3), type='l', lwd=2, col='#0366d6', xlab='Distance', ylab='Density')
 ```
+
 
 
 ## References

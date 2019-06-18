@@ -8,20 +8,20 @@ together with a function to compute the mean dispersal distances (Nathan et al. 
 
 ## Current status
 
-[![Travis](https://travis-ci.org/KevCaz/recruitR.svg?branch=master)](https://travis-ci.org/KevCaz/recruitR)
+[![Travis](https://travis-ci.org/KevCaz/diskers.svg?branch=master)](https://travis-ci.org/KevCaz/diskers)
 [![Build status](https://ci.appveyor.com/api/projects/status/h1r36ififnvvk04q?svg=true)](https://ci.appveyor.com/project/KevCaz/diskers)
-[![codecov](https://codecov.io/gh/KevCaz/recruitR/branch/master/graphs/badge.svg)](https://codecov.io/gh/KevCaz/recruitR)
+[![codecov](https://codecov.io/gh/KevCaz/diskers/branch/master/graphs/badge.svg)](https://codecov.io/gh/KevCaz/diskers)
 
 
 
 ## Installation
 
 To get the current development version from GitHub using R, use the
-[*devtools*](http://cran.r-project.org/web/packages/devtools/index.html) package:
+[*remotes*](https://cran.r-project.org/web/packages/remotes/index.html) package:
 
 ```r
 install.packages("devtools")
-devtools::install_github("KevCaz/recruitR")
+devtools::install_github("KevCaz/diskers")
 library(diskers)
 ```
 

@@ -1,3 +1,7 @@
+# diskers (devel)
+
+* The CI service is now GitHub actions.
+
 # diskers 1.0.0
 
 5 common dispersal istotropic kernels are implemented together with the functions to compute the mean dispersal distance:

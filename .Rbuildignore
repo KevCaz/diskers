@@ -11,3 +11,4 @@
 ^src/Makevars\.local$
 .Rprofile
 ^NEWS\.md
+^.github

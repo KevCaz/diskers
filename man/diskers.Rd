@@ -3,7 +3,6 @@
 \docType{package}
 \name{diskers}
 \alias{diskers}
-\alias{diskers-package}
 \title{recruitR}
 \description{
 R package to assess seeds recruitment.

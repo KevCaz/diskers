@@ -3,7 +3,7 @@
 ## Description
 
 At this stage, 5 common isotropic dispersal kernels have been implemented
-together with a function to compute the mean dispersal distances (Nathan et al. 2012).
+together with a function to compute the mean dispersal distances (see Nathan et al. 2012).
 
 
 ## Current status
@@ -20,8 +20,8 @@ To get the current development version from GitHub using R, use the
 [*remotes*](https://cran.r-project.org/web/packages/remotes/index.html) package:
 
 ```r
-install.packages("devtools")
-devtools::install_github("KevCaz/diskers")
+install.packages("remotes")
+remotes::install_github("KevCaz/diskers")
 library(diskers)
 ```
 

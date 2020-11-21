@@ -8,6 +8,7 @@ together with a function to compute the mean dispersal distances (Nathan et al. 
 
 ## Current status
 
+![R-CMD-check](https://github.com/KevCaz/diskers/workflows/R-CMD-check/badge.svg)
 [![codecov](https://codecov.io/gh/KevCaz/diskers/branch/master/graphs/badge.svg)](https://codecov.io/gh/KevCaz/diskers)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 
